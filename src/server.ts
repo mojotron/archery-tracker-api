@@ -1,8 +1,11 @@
 import "dotenv/config";
 import express from "express";
 import { PORT, NODE_ENV } from "./constants/env.js";
+import routes from "./routes/index.js";
 
 const app = express();
+
+app.use("/api", routes);
 
 const startServer = async () => {
   try {
