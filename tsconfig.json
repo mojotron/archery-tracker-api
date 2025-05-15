@@ -11,7 +11,7 @@
     "isolatedModules": true,
     "strict": true,
     "rootDir": "./src",
-    "outDir": "dist"
+    "outDir": "./dist"
   },
   "ts-node": {
     "experimentalSpecifierResolution": "node",
