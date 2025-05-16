@@ -3,7 +3,7 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { PORT, NODE_ENV, APP_ORIGIN } from "./constants/env.js";
-import routes from "./routes/index.js";
+import routes from "./routes/index.route.js";
 import errorHandler from "./middleware/errorHandler.js";
 
 const app = express();
