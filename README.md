@@ -1,6 +1,6 @@
 # archery-tracker-api
 
-track your progress in archery
+track your progress in 3D archery with IBO scoring system
 
 ## API Architecture
 
