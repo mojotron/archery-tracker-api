@@ -16,11 +16,12 @@ datasource db {
 
 model User {
   id        String   @id @default(uuid())
-  role      UserRole
-  email     String   @unique
+  email     String
   password  String
-  firstName String
-  lastName  String
+  verified  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  role      UserRole @default(user)
 }
 
 enum UserRole {
